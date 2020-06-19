@@ -1,0 +1,22 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    // less嵌套 子元素的样式直接写到父元素里面即可
+    a {
+        color: red;
+        // 伪类以及伪元素的写法 需要加上一个&符号
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+.nav {
+    .logo {
+        color: green;
+    }
+    &::before {
+        content: "";
+    }
+}

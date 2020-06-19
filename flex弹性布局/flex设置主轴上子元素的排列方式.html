@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <!-- 加了这个<meta>标签才可以实现移动端的自适应 width=device-width设置宽度等于设备的宽度 user-scalable=no设置用户无法缩放屏幕 initial-scale=1.0 初始化的缩放比为1比1"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scare=1.0, minimum-scare=1.0, user-scalable=no">
+        <title></title>
+        <style>
+            div {
+                display: flex;
+                width: 80%;
+                height: 300px;
+                background: pink;
+                /* justify-content设置主轴上子元素的元素的排列方式 默认是flex-start(从左向右)*/
+                /* flex-end 会将子元素全部推倒右边 */
+                /* justify-content: flex-end; */
+                /* center 会让元素居中对齐 */
+                /* justify-content: center; */
+                /* space-around 会让子元素平分剩余空间 */
+                /* justify-content: space-around; */
+                /* space-between会让子元素两边贴边  再平分剩余空间 */
+                justify-content: space-between;
+            }
+
+            div span {
+                width: 150px;
+                height: 100px;
+                background-color: purple;
+                margin-right: 5px;
+            }
+        </style>
+	</head>
+	<body>
+        <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+	</body>
+</html>

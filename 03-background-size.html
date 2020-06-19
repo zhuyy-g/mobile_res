@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <!-- 加了这个<meta>标签才可以实现移动端的自适应 width=device-width设置宽度等于设备的宽度 user-scalable=no设置用户无法缩放屏幕 initial-scale=1.0 初始化的缩放比为1比1"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scare=1.0, minimum-scare=1.0, user-scalable=no">
+        <title></title>
+        <style>
+            div {
+                width: 50px;
+                height: 50px;
+                border: 2px solid red;
+                background: url(./流式布局/imgs/apple100.jpg) no-repeat;
+                /* background-size: 图片的宽度  图片的高度; */
+                background-size: 50px 50px;
+                /* 只写一个参数 肯定是宽度 高度省略（自适应） */
+                /* background-size: 500px; */
+                /* 里面的单位可以跟% */
+                /* background-size: 50%; */
+                /* cover要完全覆盖div盒子 可能有部分背景图片显示不全 */
+                /* background-size: cover; */
+                /* contain 高度与宽度等比例拉伸 当宽度或者高度铺满div盒子就不再拉伸 于是会造成有空白区域*/
+                /* background-size: contain; */
+            }
+        </style>
+	</head>
+	<body>
+        <div></div>
+	</body>
+</html>

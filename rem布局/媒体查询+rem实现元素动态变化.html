@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <!-- 加了这个<meta>标签才可以实现移动端的自适应 width=device-width设置宽度等于设备的宽度 user-scalable=no设置用户无法缩放屏幕 initial-scale=1.0 初始化的缩放比为1比1"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scare=1.0, minimum-scare=1.0, user-scalable=no">
+        <title></title>
+        <style>
+           @media screen and (min-width: 500px) {
+               html {
+                   font-size: 50px;
+               }
+           }
+
+           @media screen and (min-width: 800px) {
+                html {
+                    font-size: 100px;
+                }
+           }
+
+           .top {
+               height: 1rem;
+               font-size: .5rem;
+               background-color: green;
+               color: #fff;
+               text-align: center;
+               line-height: 1rem;
+           }
+        </style>
+	</head>
+	<body>
+        <div class="top">啦啦啦</div>
+	</body>
+</html>

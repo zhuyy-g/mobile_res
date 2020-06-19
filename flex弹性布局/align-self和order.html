@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <!-- 加了这个<meta>标签才可以实现移动端的自适应 width=device-width设置宽度等于设备的宽度 user-scalable=no设置用户无法缩放屏幕 initial-scale=1.0 初始化的缩放比为1比1"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scare=1.0, minimum-scare=1.0, user-scalable=no">
+        <title></title>
+        <style>
+            div {
+                display: flex;
+                width: 80%;
+                height: 300px;
+                background-color: pink;
+                /* align-items: flex-end; */
+            }
+
+            div span {
+                width: 150px;
+                height: 100px;
+                background-color: purple;
+                margin-right: 5px;
+            }
+
+            div span:nth-child(2) {
+                order: -1;
+            }
+
+            div span:nth-child(3) {
+                align-self: flex-end;
+            }
+        </style>
+	</head>
+	<body>
+        <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+	</body>
+</html>
